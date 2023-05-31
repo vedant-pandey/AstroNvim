@@ -19,3 +19,12 @@ if astronvim.default_colorscheme then
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
+require('telescope').setup{ 
+  defaults = { 
+    file_ignore_patterns = { 
+      "node_modules",
+      "%.lock"
+    }
+  }
+}
+clipboard = "unnamedplus"
